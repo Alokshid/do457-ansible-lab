@@ -1,0 +1,50 @@
+---
+- name: Configure SNMP, NTP, and Syslog on FRR routers
+  hosts: frr
+  become: yes
+  gather_facts: false
+
+  tasks:
+
+    - name: Set hostname
+      ansible.builtin.command:
+        argv:
+          - vtysh
+          - -c
+          - conf t
+          - -c
+          - "hostname {{ hostvars[inventory_hostname].router_hostname }}"
+
+    - name: Configure SNMP
+      ansible.builtin.command:
+        argv:
+          - vtysh
+          - -c
+          - conf t
+          - -c
+          - "snmp-server community {{ snmp_community }}"
+          - -c
+          - "snmp-server location {{ snmp_location }}"
+          - -c
+          - "snmp-server contact {{ hostvars[inventory_hostname].snmp_contact }}"
+
+    - name: Configure NTP servers
+      ansible.builtin.command:
+        argv:
+          - vtysh
+          - -c
+          - conf t
+          - -c
+          - "ntp server {{ item }}"
+      loop: "{{ ntp_servers }}"
+
+    - name: Configure Syslog servers
+      ansible.builtin.command:
+        argv:
+          - vtysh
+          - -c
+          - conf t
+          - -c
+          - "log syslog {{ syslog_severity }} {{ item }}"
+      loop: "{{ syslog_servers }}"
+

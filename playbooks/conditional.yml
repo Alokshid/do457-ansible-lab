@@ -1,0 +1,12 @@
+---
+- name: Conditional config
+  hosts: frr
+  gather_facts: false
+
+  tasks:
+    - name: Set hostname only on frr1
+      ansible.netcommon.cli_config:
+        config:
+          - hostname FRR1-ONLY
+      when: inventory_hostname == "frr1"
+

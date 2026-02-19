@@ -1,0 +1,401 @@
+{
+    "plays": [
+        {
+            "__play_name": "Configure interface description",
+            "name": "Configure interface description",
+            "pattern": "frr",
+            "play": "Configure interface description",
+            "play_pattern": "frr",
+            "play_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000003",
+            "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+            "playbook_uuid": "0159c2e2-d249-4f1d-93a2-a6ccdc7e5c9e",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "2s",
+                    "__host": "clab-do457-frr-frr1",
+                    "__number": 0,
+                    "__result": "Ok",
+                    "__task": "Ensure vtysh.conf exists",
+                    "__task_action": "ansible.builtin.command",
+                    "duration": 1.769332,
+                    "end": "2026-01-18T09:25:37.675861+00:00",
+                    "event_loop": null,
+                    "host": "clab-do457-frr-frr1",
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "0159c2e2-d249-4f1d-93a2-a6ccdc7e5c9e",
+                    "remote_addr": "clab-do457-frr-frr1",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": false,
+                        "cmd": [
+                            "sh",
+                            "-c",
+                            "echo \"service integrated-vtysh-config\" > /etc/frr/vtysh.conf"
+                        ],
+                        "delta": "0:00:00.003831",
+                        "end": "2026-01-18 09:25:37.472658",
+                        "invocation": {
+                            "module_args": {
+                                "_raw_params": "sh -c 'echo \"service integrated-vtysh-config\" > /etc/frr/vtysh.conf'\n",
+                                "_uses_shell": false,
+                                "argv": null,
+                                "chdir": null,
+                                "creates": null,
+                                "executable": null,
+                                "expand_argument_vars": true,
+                                "removes": null,
+                                "stdin": null,
+                                "stdin_add_newline": true,
+                                "strip_empty_ends": true
+                            }
+                        },
+                        "msg": "",
+                        "rc": 0,
+                        "start": "2026-01-18 09:25:37.468827",
+                        "stderr": "",
+                        "stderr_lines": [],
+                        "stdout": "",
+                        "stdout_lines": []
+                    },
+                    "resolved_action": "ansible.builtin.command",
+                    "start": "2026-01-18T09:25:35.906529+00:00",
+                    "task": "Ensure vtysh.conf exists",
+                    "task_action": "ansible.builtin.command",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:8",
+                    "task_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000005",
+                    "uuid": "0dea7680-68cb-4dd3-86ed-f5aecd0eaabb"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "2s",
+                    "__host": "clab-do457-frr-frr2",
+                    "__number": 1,
+                    "__result": "Ok",
+                    "__task": "Ensure vtysh.conf exists",
+                    "__task_action": "ansible.builtin.command",
+                    "duration": 1.764427,
+                    "end": "2026-01-18T09:25:37.680199+00:00",
+                    "event_loop": null,
+                    "host": "clab-do457-frr-frr2",
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "0159c2e2-d249-4f1d-93a2-a6ccdc7e5c9e",
+                    "remote_addr": "clab-do457-frr-frr2",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": false,
+                        "cmd": [
+                            "sh",
+                            "-c",
+                            "echo \"service integrated-vtysh-config\" > /etc/frr/vtysh.conf"
+                        ],
+                        "delta": "0:00:00.003637",
+                        "end": "2026-01-18 09:25:37.472483",
+                        "invocation": {
+                            "module_args": {
+                                "_raw_params": "sh -c 'echo \"service integrated-vtysh-config\" > /etc/frr/vtysh.conf'\n",
+                                "_uses_shell": false,
+                                "argv": null,
+                                "chdir": null,
+                                "creates": null,
+                                "executable": null,
+                                "expand_argument_vars": true,
+                                "removes": null,
+                                "stdin": null,
+                                "stdin_add_newline": true,
+                                "strip_empty_ends": true
+                            }
+                        },
+                        "msg": "",
+                        "rc": 0,
+                        "start": "2026-01-18 09:25:37.468846",
+                        "stderr": "",
+                        "stderr_lines": [],
+                        "stdout": "",
+                        "stdout_lines": []
+                    },
+                    "resolved_action": "ansible.builtin.command",
+                    "start": "2026-01-18T09:25:35.915772+00:00",
+                    "task": "Ensure vtysh.conf exists",
+                    "task_action": "ansible.builtin.command",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:8",
+                    "task_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000005",
+                    "uuid": "301bea37-4ac8-458c-b87c-a350f99b07c4"
+                },
+                {
+                    "__changed": true,
+                    "__duration": "1s",
+                    "__host": "clab-do457-frr-frr1",
+                    "__number": 2,
+                    "__result": "Ok",
+                    "__task": "Set interface description on eth0",
+                    "__task_action": "ansible.builtin.shell",
+                    "duration": 1.274605,
+                    "end": "2026-01-18T09:25:38.960720+00:00",
+                    "event_loop": null,
+                    "host": "clab-do457-frr-frr1",
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "0159c2e2-d249-4f1d-93a2-a6ccdc7e5c9e",
+                    "remote_addr": "clab-do457-frr-frr1",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": true,
+                        "cmd": "vtysh -c \"configure terminal\"      -c \"interface eth0\"      -c \"description Connected-to-peer\"\n",
+                        "delta": "0:00:00.075739",
+                        "end": "2026-01-18 09:25:38.748295",
+                        "invocation": {
+                            "module_args": {
+                                "_raw_params": "vtysh -c \"configure terminal\"      -c \"interface eth0\"      -c \"description Connected-to-peer\"\n",
+                                "_uses_shell": true,
+                                "argv": null,
+                                "chdir": null,
+                                "creates": null,
+                                "executable": null,
+                                "expand_argument_vars": true,
+                                "removes": null,
+                                "stdin": null,
+                                "stdin_add_newline": true,
+                                "strip_empty_ends": true
+                            }
+                        },
+                        "msg": "",
+                        "rc": 0,
+                        "start": "2026-01-18 09:25:38.672556",
+                        "stderr": "",
+                        "stderr_lines": [],
+                        "stdout": "",
+                        "stdout_lines": []
+                    },
+                    "resolved_action": "ansible.builtin.shell",
+                    "start": "2026-01-18T09:25:37.686115+00:00",
+                    "task": "Set interface description on eth0",
+                    "task_action": "ansible.builtin.shell",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:13",
+                    "task_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000006",
+                    "uuid": "e5ab7491-5a72-416f-b8a4-294ef147848e"
+                },
+                {
+                    "__changed": true,
+                    "__duration": "1s",
+                    "__host": "clab-do457-frr-frr2",
+                    "__number": 3,
+                    "__result": "Ok",
+                    "__task": "Set interface description on eth0",
+                    "__task_action": "ansible.builtin.shell",
+                    "duration": 1.274,
+                    "end": "2026-01-18T09:25:38.965384+00:00",
+                    "event_loop": null,
+                    "host": "clab-do457-frr-frr2",
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "0159c2e2-d249-4f1d-93a2-a6ccdc7e5c9e",
+                    "remote_addr": "clab-do457-frr-frr2",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": true,
+                        "cmd": "vtysh -c \"configure terminal\"      -c \"interface eth0\"      -c \"description Connected-to-peer\"\n",
+                        "delta": "0:00:00.061307",
+                        "end": "2026-01-18 09:25:38.749134",
+                        "invocation": {
+                            "module_args": {
+                                "_raw_params": "vtysh -c \"configure terminal\"      -c \"interface eth0\"      -c \"description Connected-to-peer\"\n",
+                                "_uses_shell": true,
+                                "argv": null,
+                                "chdir": null,
+                                "creates": null,
+                                "executable": null,
+                                "expand_argument_vars": true,
+                                "removes": null,
+                                "stdin": null,
+                                "stdin_add_newline": true,
+                                "strip_empty_ends": true
+                            }
+                        },
+                        "msg": "",
+                        "rc": 0,
+                        "start": "2026-01-18 09:25:38.687827",
+                        "stderr": "",
+                        "stderr_lines": [],
+                        "stdout": "",
+                        "stdout_lines": []
+                    },
+                    "resolved_action": "ansible.builtin.shell",
+                    "start": "2026-01-18T09:25:37.691384+00:00",
+                    "task": "Set interface description on eth0",
+                    "task_action": "ansible.builtin.shell",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:13",
+                    "task_uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000006",
+                    "uuid": "8ce4a406-f1b0-4cf9-8bd2-584904e2c205"
+                }
+            ],
+            "uuid": "88a4c2d4-4ad9-0e2a-35d1-000000000003"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/i74560/do457-wsl/inventory/hosts.ini"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/i74560/do457-wsl/playbooks/interface_config.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/i74560/do457-wsl"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/i74560/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "docker",
+                "enabled": false,
+                "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/i74560/do457-wsl/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "stdout",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Command line",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Command line",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Defaults",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Command line",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "successful",
+    "status_color": 10,
+    "stdout": [
+        "",
+        "PLAY [Configure interface description] *****************************************",
+        "",
+        "TASK [Ensure vtysh.conf exists] ************************************************",
+        "\u001b[0;32mok: [clab-do457-frr-frr1]\u001b[0m",
+        "\u001b[0;32mok: [clab-do457-frr-frr2]\u001b[0m",
+        "",
+        "TASK [Set interface description on eth0] ***************************************",
+        "\u001b[0;33mchanged: [clab-do457-frr-frr1]\u001b[0m",
+        "\u001b[0;33mchanged: [clab-do457-frr-frr2]\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;33mclab-do457-frr-frr1\u001b[0m        : \u001b[0;32mok=2   \u001b[0m \u001b[0;33mchanged=1   \u001b[0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   ",
+        "\u001b[0;33mclab-do457-frr-frr2\u001b[0m        : \u001b[0;32mok=2   \u001b[0m \u001b[0;33mchanged=1   \u001b[0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}

@@ -1,0 +1,9 @@
+---
+- name: Test Variables
+  hosts: local
+  gather_facts: false
+
+  tasks:
+    - name: Print variable
+      debug:
+        msg: "{{ my_message }}"

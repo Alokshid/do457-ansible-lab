@@ -1,0 +1,259 @@
+{
+    "plays": [
+        {
+            "___progress": "100%",
+            "__changed": 0,
+            "__failed": 2,
+            "__ignored": 0,
+            "__in progress": 0,
+            "__ok": 0,
+            "__percent_complete": 100,
+            "__play_name": "Configure interface description",
+            "__progress": "Complete",
+            "__skipped": 0,
+            "__task_count": 2,
+            "__unreachable": 0,
+            "name": "Configure interface description",
+            "pattern": "frr",
+            "play": "Configure interface description",
+            "play_pattern": "frr",
+            "play_uuid": "d9dbfc97-b817-a52c-3b47-000000000003",
+            "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+            "playbook_uuid": "28f5f721-7ff0-4d63-8502-e9d34c382a2e",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clab-do457-frr-frr1",
+                    "__number": 0,
+                    "__result": "Failed",
+                    "__task": "Set interface description on eth0",
+                    "__task_action": "ansible.builtin.shell",
+                    "duration": 0.015672,
+                    "end": "2026-01-18T09:08:01.326138+00:00",
+                    "event_loop": null,
+                    "host": "clab-do457-frr-frr1",
+                    "ignore_errors": null,
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "d9dbfc97-b817-a52c-3b47-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "28f5f721-7ff0-4d63-8502-e9d34c382a2e",
+                    "remote_addr": "clab-do457-frr-frr1",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": false,
+                        "exception": "(traceback unavailable)",
+                        "msg": "Task failed: the connection plugin 'docker' was not found",
+                        "warnings": [
+                            "Error loading plugin 'community.docker.docker': No module named 'ansible_collections.community'"
+                        ]
+                    },
+                    "resolved_action": "ansible.builtin.shell",
+                    "start": "2026-01-18T09:08:01.310466+00:00",
+                    "task": "Set interface description on eth0",
+                    "task_action": "ansible.builtin.shell",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:8",
+                    "task_uuid": "d9dbfc97-b817-a52c-3b47-000000000005",
+                    "uuid": "e87587c6-222d-4d62-b140-4e111f836261"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "clab-do457-frr-frr2",
+                    "__number": 1,
+                    "__result": "Failed",
+                    "__task": "Set interface description on eth0",
+                    "__task_action": "ansible.builtin.shell",
+                    "duration": 0.015169,
+                    "end": "2026-01-18T09:08:01.333404+00:00",
+                    "event_loop": null,
+                    "host": "clab-do457-frr-frr2",
+                    "ignore_errors": null,
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "d9dbfc97-b817-a52c-3b47-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "28f5f721-7ff0-4d63-8502-e9d34c382a2e",
+                    "remote_addr": "clab-do457-frr-frr2",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": false,
+                        "exception": "(traceback unavailable)",
+                        "msg": "Task failed: the connection plugin 'docker' was not found",
+                        "warnings": [
+                            "Error loading plugin 'community.docker.docker': No module named 'ansible_collections.community'"
+                        ]
+                    },
+                    "resolved_action": "ansible.builtin.shell",
+                    "start": "2026-01-18T09:08:01.318235+00:00",
+                    "task": "Set interface description on eth0",
+                    "task_action": "ansible.builtin.shell",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:8",
+                    "task_uuid": "d9dbfc97-b817-a52c-3b47-000000000005",
+                    "uuid": "bb371863-8ff9-4ade-af53-385c38c475aa"
+                }
+            ],
+            "uuid": "d9dbfc97-b817-a52c-3b47-000000000003"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/i74560/do457-wsl/inventory/hosts.ini"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/i74560/do457-wsl/playbooks/interface_config.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/i74560/do457-wsl"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/i74560/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "docker",
+                "enabled": true,
+                "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/i74560/do457-wsl/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "interactive",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Previous cli command",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Previous cli command",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Defaults",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Defaults",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "",
+        "PLAY [Configure interface description] *****************************************",
+        "",
+        "TASK [Set interface description on eth0] ***************************************",
+        "\u001b[1;35m[WARNING]: Error loading plugin 'community.docker.docker': No module named 'ansible_collections.community'\u001b[0m",
+        "\u001b[0;31m[ERROR]: Task failed: the connection plugin 'docker' was not found\u001b[0m",
+        "\u001b[0;31mOrigin: /home/i74560/do457-wsl/playbooks/interface_config.yml:8:7\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31m6\u001b[0m",
+        "\u001b[0;31m7   tasks:\u001b[0m",
+        "\u001b[0;31m8     - name: Set interface description on eth0\u001b[0m",
+        "\u001b[0;31m        ^ column 7\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31mfatal: [clab-do457-frr-frr1]: FAILED! => {\"changed\": false, \"msg\": \"Task failed: the connection plugin 'docker' was not found\"}\u001b[0m",
+        "\u001b[0;31mfatal: [clab-do457-frr-frr2]: FAILED! => {\"changed\": false, \"msg\": \"Task failed: the connection plugin 'docker' was not found\"}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31mclab-do457-frr-frr1\u001b[0m        : ok=0    changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   ",
+        "\u001b[0;31mclab-do457-frr-frr2\u001b[0m        : ok=0    changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}

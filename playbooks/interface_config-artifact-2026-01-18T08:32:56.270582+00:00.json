@@ -1,0 +1,257 @@
+{
+    "plays": [
+        {
+            "___progress": "100%",
+            "__changed": 0,
+            "__failed": 0,
+            "__ignored": 0,
+            "__in progress": 0,
+            "__ok": 0,
+            "__percent_complete": 100,
+            "__play_name": "Configure interface description",
+            "__progress": "Complete",
+            "__skipped": 0,
+            "__task_count": 2,
+            "__unreachable": 2,
+            "name": "Configure interface description",
+            "pattern": "frr",
+            "play": "Configure interface description",
+            "play_pattern": "frr",
+            "play_uuid": "b36a0783-990a-c943-b9c4-000000000003",
+            "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+            "playbook_uuid": "caf3f0a7-1016-4c82-bfdf-d8081e5453fa",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "frr1",
+                    "__number": 0,
+                    "__result": "Unreachable",
+                    "__task": "Configure eth1 description",
+                    "__task_action": "ansible.netcommon.cli_config",
+                    "duration": 0.082568,
+                    "end": "2026-01-18T08:32:55.545277+00:00",
+                    "host": "frr1",
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "b36a0783-990a-c943-b9c4-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "caf3f0a7-1016-4c82-bfdf-d8081e5453fa",
+                    "remote_addr": "frr1",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": false,
+                        "exception": "(traceback unavailable)",
+                        "msg": "Task failed: network os ansible_frr.frr.frr is not supported",
+                        "unreachable": true,
+                        "warnings": [
+                            "Error loading plugin 'ansible_frr.frr.frr': No module named 'ansible_collections.ansible_frr'"
+                        ]
+                    },
+                    "resolved_action": "ansible.netcommon.cli_config",
+                    "start": "2026-01-18T08:32:55.462709+00:00",
+                    "task": "Configure eth1 description",
+                    "task_action": "ansible.netcommon.cli_config",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:7",
+                    "task_uuid": "b36a0783-990a-c943-b9c4-000000000005",
+                    "uuid": "f140b48e-3355-42a9-b090-12a91a712377"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "frr2",
+                    "__number": 1,
+                    "__result": "Unreachable",
+                    "__task": "Configure eth1 description",
+                    "__task_action": "ansible.netcommon.cli_config",
+                    "duration": 0.077064,
+                    "end": "2026-01-18T08:32:55.547768+00:00",
+                    "host": "frr2",
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "b36a0783-990a-c943-b9c4-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "caf3f0a7-1016-4c82-bfdf-d8081e5453fa",
+                    "remote_addr": "frr2",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": false,
+                        "exception": "(traceback unavailable)",
+                        "msg": "Task failed: network os ansible_frr.frr.frr is not supported",
+                        "unreachable": true,
+                        "warnings": [
+                            "Error loading plugin 'ansible_frr.frr.frr': No module named 'ansible_collections.ansible_frr'"
+                        ]
+                    },
+                    "resolved_action": "ansible.netcommon.cli_config",
+                    "start": "2026-01-18T08:32:55.470704+00:00",
+                    "task": "Configure eth1 description",
+                    "task_action": "ansible.netcommon.cli_config",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:7",
+                    "task_uuid": "b36a0783-990a-c943-b9c4-000000000005",
+                    "uuid": "e02f8890-a010-47e0-bae2-023e0ae9fd99"
+                }
+            ],
+            "uuid": "b36a0783-990a-c943-b9c4-000000000003"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/i74560/do457-wsl/inventory/hosts.ini"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/i74560/do457-wsl/playbooks/interface_config.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/i74560/do457-wsl"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/i74560/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "docker",
+                "enabled": true,
+                "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/i74560/do457-wsl/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "interactive",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Previous cli command",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Previous cli command",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Defaults",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Defaults",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "",
+        "PLAY [Configure interface description] *****************************************",
+        "",
+        "TASK [Configure eth1 description] **********************************************",
+        "\u001b[1;35m[WARNING]: Error loading plugin 'ansible_frr.frr.frr': No module named 'ansible_collections.ansible_frr'\u001b[0m",
+        "\u001b[0;31m[ERROR]: Task failed: network os ansible_frr.frr.frr is not supported\u001b[0m",
+        "\u001b[0;31mOrigin: /home/i74560/do457-wsl/playbooks/interface_config.yml:7:7\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31m5\u001b[0m",
+        "\u001b[0;31m6   tasks:\u001b[0m",
+        "\u001b[0;31m7     - name: Configure eth1 description\u001b[0m",
+        "\u001b[0;31m        ^ column 7\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[1;31mfatal: [frr1]: UNREACHABLE! => {\"changed\": false, \"msg\": \"Task failed: network os ansible_frr.frr.frr is not supported\", \"unreachable\": true}\u001b[0m",
+        "\u001b[1;31mfatal: [frr2]: UNREACHABLE! => {\"changed\": false, \"msg\": \"Task failed: network os ansible_frr.frr.frr is not supported\", \"unreachable\": true}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31mfrr1\u001b[0m                       : ok=0    changed=0    \u001b[1;31munreachable=1   \u001b[0m failed=0    skipped=0    rescued=0    ignored=0   ",
+        "\u001b[0;31mfrr2\u001b[0m                       : ok=0    changed=0    \u001b[1;31munreachable=1   \u001b[0m failed=0    skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}

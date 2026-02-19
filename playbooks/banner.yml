@@ -1,0 +1,20 @@
+---
+- name: Configure login banner on Arista EOS (cEOS-safe)
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    eos_nodes:
+      - clab-ceos-lab-leaf1
+      - clab-ceos-lab-leaf2
+
+    banner_text: "Managed_by_Ansible_DO457"
+
+  tasks:
+    - name: Configure login banner (single-line, cEOS compatible)
+      ansible.builtin.command:
+        cmd: >
+          docker exec {{ item }} Cli -p 15 -c
+          "configure terminal ; banner login {{ banner_text }} ; write memory"
+      loop: "{{ eos_nodes }}"
+

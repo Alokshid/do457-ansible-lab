@@ -1,0 +1,13 @@
+---
+- name: Configure SNMP on FRR routers
+  hosts: frr
+  gather_facts: false
+
+  tasks:
+    - name: Configure SNMP settings
+      ansible.netcommon.cli_config:
+        config:
+          - snmp-server community public ro
+          - snmp-server location DO457-LAB
+          - snmp-server contact admin@example.com
+

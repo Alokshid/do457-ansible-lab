@@ -1,0 +1,15 @@
+---
+- name: Verify VLANs
+  hosts: frr
+  gather_facts: false
+
+  tasks:
+    - name: Show VLAN config
+      community.docker.docker_container_exec:
+        container: "{{ inventory_hostname }}"
+        command: vtysh -c "show running-config | section vlan"
+      register: vlan_out
+
+    - debug:
+        var: vlan_out.stdout
+

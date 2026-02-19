@@ -1,0 +1,18 @@
+---
+- name: Create VLAN subinterfaces on FRR
+  hosts: frr
+  gather_facts: false
+
+  tasks:
+    - name: Create VLAN 10 subinterface (Linux)
+      ansible.builtin.raw: |
+        ip link add link eth0 name eth0.10 type vlan id 10 || true
+        ip addr add 10.10.10.1/24 dev eth0.10 || true
+        ip link set eth0.10 up
+
+    - name: Create VLAN 20 subinterface (Linux)
+      ansible.builtin.raw: |
+        ip link add link eth0 name eth0.20 type vlan id 20 || true
+        ip addr add 10.20.20.1/24 dev eth0.20 || true
+        ip link set eth0.20 up
+

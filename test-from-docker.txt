@@ -1,0 +1,38 @@
+! device: leaf1 (cEOSLab, EOS-4.34.2.1F-43860280.43421F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$GfgtioAyb6fHP0DF$pFUwCoUL5aKTJO1WzZCLCsNolo5SvwMNBTrzmSwTy3kqsX/la/Ip80s/lAzvZbFSQIWRCrY3l3juydPebzlNU0
+!
+management api http-commands
+   no shutdown
+!
+no service interface inactive port-id allocation disabled
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname leaf1
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Management0
+!
+no ip routing
+!
+ip route 0.0.0.0/0 172.20.20.1
+!
+ipv6 route ::/0 3fff:172:20:20::1
+!
+end

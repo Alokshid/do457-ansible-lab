@@ -1,0 +1,18 @@
+---
+- name: Configure multiple interfaces
+  hosts: frr
+  gather_facts: false
+
+  vars:
+    interfaces:
+      - eth1
+      - eth2
+
+  tasks:
+    - name: Configure interfaces
+      ansible.netcommon.cli_config:
+        config:
+          - interface {{ item }}
+          - description Loop_Configured
+      loop: "{{ interfaces }}"
+

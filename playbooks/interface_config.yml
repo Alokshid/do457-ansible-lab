@@ -1,0 +1,17 @@
+---
+- name: Configure interface description
+  hosts: frr
+  gather_facts: false
+  become: false
+
+  tasks:
+    - name: Ensure vtysh.conf exists
+      ansible.builtin.command: >
+        sh -c 'echo "service integrated-vtysh-config" > /etc/frr/vtysh.conf'
+      changed_when: false
+
+    - name: Set interface description on eth0
+      ansible.builtin.shell: |
+        vtysh -c "configure terminal" \
+              -c "interface eth0" \
+              -c "description Connected-to-peer"

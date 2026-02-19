@@ -1,0 +1,37 @@
+---
+- name: Backup Arista EOS config (FINAL – VERIFIED METHOD)
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    node: clab-ceos-lab-leaf1
+    backup_dir: /home/i74560/do457-wsl/backups
+    flash_file: ansible-backup.txt
+
+  tasks:
+    - name: Ensure backups directory exists
+      ansible.builtin.file:
+        path: "{{ backup_dir }}"
+        state: directory
+        mode: "0755"
+
+    - name: Save running-config to EOS flash
+      ansible.builtin.command:
+        cmd: >
+          docker exec {{ node }}
+          Cli -p 15 -c "copy running-config flash:/{{ flash_file }}"
+      changed_when: false
+
+    - name: Verify file exists in container
+      ansible.builtin.command:
+        cmd: >
+          docker exec {{ node }} ls -lh /mnt/flash/{{ flash_file }}
+      changed_when: false
+
+    - name: Copy config from container to host
+      ansible.builtin.command:
+        cmd: >
+          docker cp {{ node }}:/mnt/flash/{{ flash_file }}
+          {{ backup_dir }}/{{ node }}.txt
+      changed_when: false
+

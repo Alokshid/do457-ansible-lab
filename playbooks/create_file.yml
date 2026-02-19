@@ -1,0 +1,11 @@
+---
+- name: Create file
+  hosts: local
+  gather_facts: false
+
+  tasks:
+    - name: Create test file
+      ansible.builtin.file:
+        path: /tmp/do457.txt
+        state: touch
+

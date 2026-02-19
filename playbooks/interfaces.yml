@@ -1,0 +1,41 @@
+---
+- name: Configure Ethernet interfaces on Arista cEOS leaf switches (CORRECT)
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    eos_nodes:
+      - clab-ceos-lab-leaf1
+      - clab-ceos-lab-leaf2
+
+    interfaces:
+      - Ethernet1
+      - Ethernet2
+
+  tasks:
+    - name: Build interface config file locally
+      ansible.builtin.copy:
+        dest: /tmp/interfaces.cfg
+        content: |
+          {% for iface in interfaces %}
+          interface {{ iface }}
+             description Inter-switch link
+          !
+          {% endfor %}
+        mode: "0644"
+
+    - name: Copy interface config into EOS flash
+      ansible.builtin.command:
+        cmd: docker cp /tmp/interfaces.cfg {{ item }}:/mnt/flash/interfaces.cfg
+      loop: "{{ eos_nodes }}"
+
+    - name: Apply interface config using EOS config loader
+      ansible.builtin.command:
+        cmd: docker exec {{ item }} Cli -p 15 -G /mnt/flash/interfaces.cfg
+      loop: "{{ eos_nodes }}"
+
+    - name: Save configuration
+      ansible.builtin.command:
+        cmd: docker exec {{ item }} Cli -p 15 -c "write memory"
+      loop: "{{ eos_nodes }}"
+

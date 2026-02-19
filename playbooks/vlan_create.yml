@@ -1,0 +1,20 @@
+---
+- name: Create VLAN subinterfaces on FRR
+  hosts: frr
+  gather_facts: false
+
+  tasks:
+    - name: Create VLAN 10 subinterface
+      ansible.builtin.raw: >
+        vtysh -c "configure terminal"
+              -c "interface eth0.10"
+              -c "ip address 10.10.10.1/24"
+              -c "no shutdown"
+
+    - name: Create VLAN 20 subinterface
+      ansible.builtin.raw: >
+        vtysh -c "configure terminal"
+              -c "interface eth0.20"
+              -c "ip address 10.20.20.1/24"
+              -c "no shutdown"
+

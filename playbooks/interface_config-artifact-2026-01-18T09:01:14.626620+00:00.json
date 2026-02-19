@@ -1,0 +1,291 @@
+{
+    "plays": [
+        {
+            "__play_name": "Configure interface description",
+            "name": "Configure interface description",
+            "pattern": "frr",
+            "play": "Configure interface description",
+            "play_pattern": "frr",
+            "play_uuid": "88a4c2d4-4ad9-86b7-7a0f-000000000003",
+            "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+            "playbook_uuid": "d188db80-70f1-4fd4-a4a9-bb1533d01767",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__host": "clab-do457-frr-frr1",
+                    "__number": 0,
+                    "__result": "Failed",
+                    "__task": "Set interface description on eth1",
+                    "__task_action": "ansible.builtin.shell",
+                    "duration": 1.295814,
+                    "end": "2026-01-18T09:01:14.428462+00:00",
+                    "event_loop": null,
+                    "host": "clab-do457-frr-frr1",
+                    "ignore_errors": null,
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "88a4c2d4-4ad9-86b7-7a0f-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "d188db80-70f1-4fd4-a4a9-bb1533d01767",
+                    "remote_addr": "clab-do457-frr-frr1",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": false,
+                        "module_stderr": "/bin/sh: sudo: not found\n",
+                        "module_stdout": "",
+                        "msg": "MODULE FAILURE: No start of json char found\nSee stdout/stderr for the exact error",
+                        "rc": 127
+                    },
+                    "resolved_action": "ansible.builtin.shell",
+                    "start": "2026-01-18T09:01:13.132648+00:00",
+                    "task": "Set interface description on eth1",
+                    "task_action": "ansible.builtin.shell",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:8",
+                    "task_uuid": "88a4c2d4-4ad9-86b7-7a0f-000000000005",
+                    "uuid": "a4082332-9a02-4651-943d-ff420c4b900d"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__host": "clab-do457-frr-frr2",
+                    "__number": 1,
+                    "__result": "Failed",
+                    "__task": "Set interface description on eth1",
+                    "__task_action": "ansible.builtin.shell",
+                    "duration": 1.267818,
+                    "end": "2026-01-18T09:01:14.408705+00:00",
+                    "event_loop": null,
+                    "host": "clab-do457-frr-frr2",
+                    "ignore_errors": null,
+                    "play": "Configure interface description",
+                    "play_pattern": "frr",
+                    "play_uuid": "88a4c2d4-4ad9-86b7-7a0f-000000000003",
+                    "playbook": "/home/i74560/do457-wsl/playbooks/interface_config.yml",
+                    "playbook_uuid": "d188db80-70f1-4fd4-a4a9-bb1533d01767",
+                    "remote_addr": "clab-do457-frr-frr2",
+                    "res": {
+                        "_ansible_no_log": false,
+                        "changed": false,
+                        "module_stderr": "/bin/sh: sudo: not found\n",
+                        "module_stdout": "",
+                        "msg": "MODULE FAILURE: No start of json char found\nSee stdout/stderr for the exact error",
+                        "rc": 127
+                    },
+                    "resolved_action": "ansible.builtin.shell",
+                    "start": "2026-01-18T09:01:13.140887+00:00",
+                    "task": "Set interface description on eth1",
+                    "task_action": "ansible.builtin.shell",
+                    "task_args": "",
+                    "task_path": "/home/i74560/do457-wsl/playbooks/interface_config.yml:8",
+                    "task_uuid": "88a4c2d4-4ad9-86b7-7a0f-000000000005",
+                    "uuid": "6607a122-1502-4c82-8c5f-5fad516771b6"
+                }
+            ],
+            "uuid": "88a4c2d4-4ad9-86b7-7a0f-000000000003"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "cmdline": "-vvv",
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/i74560/do457-wsl/inventory/hosts.ini"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/i74560/do457-wsl/playbooks/interface_config.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/i74560/do457-wsl"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/i74560/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "docker",
+                "enabled": false,
+                "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/i74560/do457-wsl/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "stdout",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Command line",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Command line",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Command line",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Defaults",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Command line",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "\u001b[0;34mansible-playbook [core 2.18.4]\u001b[0m",
+        "\u001b[0;34m  config file = /etc/ansible/ansible.cfg\u001b[0m",
+        "\u001b[0;34m  configured module search path = ['/home/i74560/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']\u001b[0m",
+        "\u001b[0;34m  ansible python module location = /usr/lib/python3/dist-packages/ansible\u001b[0m",
+        "\u001b[0;34m  ansible collection location = /home/i74560/.ansible/collections:/usr/share/ansible/collections\u001b[0m",
+        "\u001b[0;34m  executable location = /usr/bin/ansible-playbook\u001b[0m",
+        "\u001b[0;34m  python version = 3.12.3 (main, Jan  8 2026, 11:30:50) [GCC 13.3.0] (/usr/bin/python3)\u001b[0m",
+        "\u001b[0;34m  jinja version = 3.1.2\u001b[0m",
+        "\u001b[0;34m  libyaml = True\u001b[0m",
+        "\u001b[0;34mUsing /etc/ansible/ansible.cfg as config file\u001b[0m",
+        "\u001b[0;34mhost_list declined parsing /home/i74560/do457-wsl/inventory/hosts.ini as it did not pass its verify_file() method\u001b[0m",
+        "\u001b[0;34mscript declined parsing /home/i74560/do457-wsl/inventory/hosts.ini as it did not pass its verify_file() method\u001b[0m",
+        "\u001b[0;34mauto declined parsing /home/i74560/do457-wsl/inventory/hosts.ini as it did not pass its verify_file() method\u001b[0m",
+        "\u001b[0;34myaml declined parsing /home/i74560/do457-wsl/inventory/hosts.ini as it did not pass its verify_file() method\u001b[0m",
+        "\u001b[0;34mParsed /home/i74560/do457-wsl/inventory/hosts.ini inventory source with ini plugin\u001b[0m",
+        "\u001b[0;34mSkipping callback 'awx_display', as we already have a stdout callback.\u001b[0m",
+        "\u001b[0;34mSkipping callback 'default', as we already have a stdout callback.\u001b[0m",
+        "\u001b[0;34mSkipping callback 'minimal', as we already have a stdout callback.\u001b[0m",
+        "\u001b[0;34mSkipping callback 'oneline', as we already have a stdout callback.\u001b[0m",
+        "",
+        "PLAYBOOK: interface_config.yml *************************************************",
+        "\u001b[0;34m1 plays in /home/i74560/do457-wsl/playbooks/interface_config.yml\u001b[0m",
+        "",
+        "PLAY [Configure interface description] *****************************************",
+        "",
+        "TASK [Set interface description on eth1] ***************************************",
+        "\u001b[1;30mtask path: /home/i74560/do457-wsl/playbooks/interface_config.yml:8\u001b[0m",
+        "\u001b[0;34mredirecting (type: connection) ansible.builtin.docker to community.docker.docker\u001b[0m",
+        "\u001b[0;34mredirecting (type: connection) ansible.builtin.docker to community.docker.docker\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr1> ESTABLISH DOCKER CONNECTION FOR USER: root\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr1> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr1', '/bin/sh', '-c', \"/bin/sh -c 'echo ~ && sleep 0'\"]\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr2> ESTABLISH DOCKER CONNECTION FOR USER: root\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr2> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr2', '/bin/sh', '-c', \"/bin/sh -c 'echo ~ && sleep 0'\"]\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr1> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr1', '/bin/sh', '-c', '/bin/sh -c \\'( umask 77 && mkdir -p \"` echo /root/.ansible/tmp `\"&& mkdir \"` echo /root/.ansible/tmp/ansible-tmp-1768726873.4463296-20308-79311907714985 `\" && echo ansible-tmp-1768726873.4463296-20308-79311907714985=\"` echo /root/.ansible/tmp/ansible-tmp-1768726873.4463296-20308-79311907714985 `\" ) && sleep 0\\'']\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr2> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr2', '/bin/sh', '-c', '/bin/sh -c \\'( umask 77 && mkdir -p \"` echo /root/.ansible/tmp `\"&& mkdir \"` echo /root/.ansible/tmp/ansible-tmp-1768726873.453032-20309-261555404119989 `\" && echo ansible-tmp-1768726873.453032-20309-261555404119989=\"` echo /root/.ansible/tmp/ansible-tmp-1768726873.453032-20309-261555404119989 `\" ) && sleep 0\\'']\u001b[0m",
+        "\u001b[0;34mUsing module file /usr/lib/python3/dist-packages/ansible/modules/command.py\u001b[0m",
+        "\u001b[0;34mUsing module file /usr/lib/python3/dist-packages/ansible/modules/command.py\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr1> PUT /home/i74560/.ansible/tmp/ansible-local-203044yayj1er/tmp_r87hyfq TO /root/.ansible/tmp/ansible-tmp-1768726873.4463296-20308-79311907714985/AnsiballZ_command.py\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr2> PUT /home/i74560/.ansible/tmp/ansible-local-203044yayj1er/tmp616j5rtf TO /root/.ansible/tmp/ansible-tmp-1768726873.453032-20309-261555404119989/AnsiballZ_command.py\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr2> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr2', '/bin/sh', '-c', \"/bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1768726873.453032-20309-261555404119989/ /root/.ansible/tmp/ansible-tmp-1768726873.453032-20309-261555404119989/AnsiballZ_command.py && sleep 0'\"]\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr1> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr1', '/bin/sh', '-c', \"/bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1768726873.4463296-20308-79311907714985/ /root/.ansible/tmp/ansible-tmp-1768726873.4463296-20308-79311907714985/AnsiballZ_command.py && sleep 0'\"]\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr2> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr2', '/bin/sh', '-c', '/bin/sh -c \\'sudo -H -S -n  -u root /bin/sh -c \\'\"\\'\"\\'echo BECOME-SUCCESS-fypspjcqtbbfbazeuodpmlmbealssain ; /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1768726873.453032-20309-261555404119989/AnsiballZ_command.py\\'\"\\'\"\\' && sleep 0\\'']\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr1> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr1', '/bin/sh', '-c', '/bin/sh -c \\'sudo -H -S -n  -u root /bin/sh -c \\'\"\\'\"\\'echo BECOME-SUCCESS-zgjgorblndgyxmukpzipjljtpwtpnyex ; /usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1768726873.4463296-20308-79311907714985/AnsiballZ_command.py\\'\"\\'\"\\' && sleep 0\\'']\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr2> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr2', '/bin/sh', '-c', \"/bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1768726873.453032-20309-261555404119989/ > /dev/null 2>&1 && sleep 0'\"]\u001b[0m",
+        "\u001b[0;34m<clab-do457-frr-frr1> EXEC ['/usr/bin/docker', b'exec', b'-i', 'clab-do457-frr-frr1', '/bin/sh', '-c', \"/bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1768726873.4463296-20308-79311907714985/ > /dev/null 2>&1 && sleep 0'\"]\u001b[0m",
+        "\u001b[0;31mfatal: [clab-do457-frr-frr2]: FAILED! => {\u001b[0m",
+        "\u001b[0;31m    \"changed\": false,\u001b[0m",
+        "\u001b[0;31m    \"module_stderr\": \"/bin/sh: sudo: not found\\n\",\u001b[0m",
+        "\u001b[0;31m    \"module_stdout\": \"\",\u001b[0m",
+        "\u001b[0;31m    \"msg\": \"MODULE FAILURE: No start of json char found\\nSee stdout/stderr for the exact error\",\u001b[0m",
+        "\u001b[0;31m    \"rc\": 127\u001b[0m",
+        "\u001b[0;31m}\u001b[0m",
+        "\u001b[0;31mfatal: [clab-do457-frr-frr1]: FAILED! => {\u001b[0m",
+        "\u001b[0;31m    \"changed\": false,\u001b[0m",
+        "\u001b[0;31m    \"module_stderr\": \"/bin/sh: sudo: not found\\n\",\u001b[0m",
+        "\u001b[0;31m    \"module_stdout\": \"\",\u001b[0m",
+        "\u001b[0;31m    \"msg\": \"MODULE FAILURE: No start of json char found\\nSee stdout/stderr for the exact error\",\u001b[0m",
+        "\u001b[0;31m    \"rc\": 127\u001b[0m",
+        "\u001b[0;31m}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31mclab-do457-frr-frr1\u001b[0m        : ok=0    changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   ",
+        "\u001b[0;31mclab-do457-frr-frr2\u001b[0m        : ok=0    changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}
